@@ -477,7 +477,7 @@ section:nth-child(even) {
 /*===== SKILLS =====*/
 
 .language__img {
-  width: 100%;
+  /*width: 100%;*/
   max-width: 100px;
   transition: all 300ms;
   flex-shrink: 0;
