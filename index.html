@@ -71,37 +71,64 @@
                 <span class="section-subtitle">My history</span>
                 <h2 class="section-title">About me</h2>
 
-                <div class="about__container  bd-grid">
+                <div class="about__container bd-grid">
                     <div class="about__data bd-grid">
                         <p class="about__description"><span>The name's Roy <br> </span> I am a 23 year old from Singapore, 
                             passionate about implementing well designed technology to solve the world's problems. 
                             Constantly dreaming about the next crazy idea. I play the guitar and volleyball during my free time.
+                            <p id="more" class="about__description">
+                            My skill sets and past experiences working on various products, has positioned me as someone who is able to understand expectations required from different perspectives. My technical background also gives me the ability to break down technical jargon, and translate them into actionable insights. This also allows me to map out practical, reasonable requirements for development. This skill is evident from my involvement in the successful launch of 5 projects, 3 of which I had the opportunity to lead. This portfolio ranges from the management and development of an enterprise-wide KPI dashboarding system to the implementation of an Intranet for over 200 employees.
+
+                            <br><br>Coupled with this, I am proficient in front-end development, with good knowledge of HTML/CSS and numerous front-end frameworks such as Angular, Ionic and Flutter. My breadth in front-end development gives me the flexibility to adapt to the varying technical stacks required for different occasions. I have developed several mobile and web applications, more notably a Hackathon finalist mobile application, “Habitouch” as well as “Let’s Get Physio-cal” a web application built on flutter with a firebase backend.
+
+                            <br><br>Every company that has technology in their business requires a person with the technical expertise to manage the development, a person to design the product and a person who can engineer it. I believe my greatest asset is the ability to do either role. I provide the greatest value to any company that requires someone who has background and skills from all aspects of the product cycle to manage and develop user-centric, front-facing products.
+
+                            <br><br>Do give me the opportunity, to be part of your idea, and to build the next biggest thing, together.
+                            </p>
                         </p>
-                        <h3 class="about__area">My Interests</h3>
+
+                        <div style = "align-items: center;">
+                            <a id="myBtn" download="" onclick="myFunction()" class="button button-light home__button" style = "width: 50%; align-items: center; border-radius: .5rem;">Tell me more!</a>
+                        </div>
+                            <script>
+                            function myFunction() {
+                                var moreText = document.getElementById("more");
+                                var btnText = document.getElementById("myBtn");
+
+                                if (moreText.style.display === "inline") {
+                                    btnText.innerHTML = "Tell me more!";
+                                    moreText.style.display = "none";
+                                } else {
+                                    btnText.innerHTML = "Read less";
+                                    moreText.style.display = "inline";  
+                                }
+                            }
+                            </script>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+                <h3 class="about__area" style="text-align: center; margin-top: 40px;">My Interests</h3>
                         <div class="container">
                         <div class="row">
                         <div class="language__list">
-                        <div style="margin: 20px">
+                        <div style="text-align: center; margin: 20px; margin-left: 60px;">
                             <i class='bx bx-palette services__icon'></i>
                             <h3 class="services__title">Ui/Ux Design</h3>
                         </div>
 
-                        <div style="margin: 20px">
+                        <div style="text-align: center;margin: 20px;">
                             <i class='bx bx-desktop services__icon'></i>
                             <h3 class="services__title">Frontend Dev</h3>
                         </div>
 
-                        <div style="margin: 20px">
+                        <div style="text-align: center;margin: 20px;">
                             <i class='bx bx-bulb services__icon'></i>
                             <h3 class="services__title">Entrepreneurship</h3>
                         </div>
                     </div>
                     </div>
                     </div>
-                    </div>
-
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
-                </div>
             </section>
 
             <!--===== QUALIFICATION =====-->
@@ -389,119 +416,139 @@
             <section class="portfolio bd-container section" id="portfolio">
                 <span class="section-subtitle">My recent works</span>
                 <h2 class="section-title">Portfolio</h2>
-                    <div class="container">
-                      <div class="row">
-                        <ul class="project__list">
-                          <li class="project">
+
+                <div class="portfolio__nav">
+                    <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                    <span class="portfolio__item" data-filter=".dev">Development</span>
+                    <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+                    <span class="portfolio__item" data-filter=".others">Others</span>
+                </div>
+
+                <div class="portfolio__container">
+                    <div class="portfolio__content mix dev">
+                        <ul class="project">
                             <div class="project__wrapper">
-                              <img src="assets/img/lgp_project.png" class="project__img" alt="Let's Get Physio-cal">
-                              <div class="project__description">
+                            <img src="assets/img/lgp_project.png" class="project__img" alt="Let's Get Physio-cal">
+                            <div class="project__description">
                                 <h3 class="project__description--title">Let's Get Physio-cal</h3>
                                 <h4 class="project__description--sub-title">
-                                  Flutter, Dart, Firebase
+                                Flutter, Dart, Firebase
                                 </h4>
                                 <p class="project__description--para">
-                                  Let's Get Physio-cal is a one stop platform for or physiotherapists to record, 
-                                  and for their patients to keep track of the progress of their physiotherapy sessions. The website 
-                                  was developed using the Flutter SDK on Dart, connected by a Firebase backend.
+                                Let's Get Physio-cal is a one stop platform for or physiotherapists to record, 
+                                and for their patients to keep track of the progress of their physiotherapy sessions. The website 
+                                was developed using the Flutter SDK on Dart, connected by a Firebase backend.
                                 </p>
                                 <div class="project__description--links">
-                                  <a href="https://github.com/Roystal/LGPhysio.git" target="_blank" class="project__description--link">
+                                <a href="https://github.com/Roystal/LGPhysio.git" target="_blank" class="project__description--link">
                                     <i class="bx bxl-github"></i>
-                                  </a>
-                                  <a href="https://drive.google.com/file/d/1vkGpHz-GYDXosoQSG-Tw78Y2bTTAt9DP/view?usp=sharing" class="project__description--link">
+                                </a>
+                                <a href="https://drive.google.com/file/d/1vkGpHz-GYDXosoQSG-Tw78Y2bTTAt9DP/view?usp=sharing" class="project__description--link">
                                     <i class="bx bx-link"></i>
-                                  </a>
+                                </a>
                                 </div>
-                              </div>
                             </div>
-                          </li>
-                          <li class="project">
-                            <div class="project__wrapper">
-                              <img src="assets/img/symp_project.png" class="project__img" alt="Symp">
-                              <div class="project__description">
-                                <h3 class="project__description--title">Symp</h3>
-                                <h4 class="project__description--sub-title">
-                                  UX Design, Miro
-                                </h4>
-                                <p class="project__description--para">
-                                  Symp is a UX project done together with my NM2213 Project mates. Symp aims to design a 
-                                  conferencing and collaboration app with musicians in mind. The platform incorporates 
-                                  custom video views as well as common musician tools. The project prototype was done on the Miro platform.
-                                </p>
-                                <div class="project__description--links">
-                                  <a href="https://docs.google.com/document/d/1zMU323l5nFixeTyoinJnYjkYFIn63hVxxJZPowEzoyY/edit?usp=sharing" target="_blank" class="project__description--link">
-                                    <i class="bx bxs-file-doc"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="project">
-                            <div class="project__wrapper">
-                              <img src="assets/img/EasyDelivery_project.png" class="project__img" alt="Easy Delivery">
-                              <div class="project__description">
-                                <h3 class="project__description--title">EasyDelivery</h3>
-                                <h4 class="project__description--sub-title">
-                                  UI/UX Design, Figma
-                                </h4>
-                                <p class="project__description--para">
-                                  With thorough analysis of user case scenarios and requirements, I imagined and designed a delivery request platform application on figma. 
-                                  EasyDelivery is an open delivery platform where people can requests for deliveries of their items and also take on delivery requests. 
-                                </p>
-                                <div class="project__description--links">
-                                  <a href="https://www.figma.com/file/JOPt2tj9bFHVRXBx2uRDXg/EasyDelivery-Application-Screens" target="_blank" class="project__description--link">
-                                    <i class="bx bxl-figma"></i>
-                                  </a>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="project">
-                            <div class="project__wrapper">
-                              <img src="assets/img/portfolio-website_project.png" class="project__img" alt="Portfolio Website">
-                              <div class="project__description">
-                                <h3 class="project__description--title">Portfolio Website</h3>
-                                <h4 class="project__description--sub-title">
-                                  HTML, CSS, PHP
-                                </h4>
-                                <p class="project__description--para">
-                                  My personal portfolio website, the one that you are viewing currently. Done with HTML, CSS and PHP.
-                                </p>
-                                <div class="project__description--links">
-                                  <a href="https://github.com/Roystal/roystal.github.io.git" target="_blank" class="project__description--link">
-                                    <i class="bx bxl-github"></i>
-                                  </a>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="project">
-                            <div class="project__wrapper">
-                              <img src="assets/img/publicity-materials_project.png" class="project__img" alt="Design Projects">
-                              <div class="project__description">
-                                <h3 class="project__description--title">Design Projects</h3>
-                                <h4 class="project__description--sub-title">
-                                  Canva, Figma
-                                </h4>
-                                <p class="project__description--para">
-                                  I have always loved designing and creating beautiful posters, phamplets, posts and etc.
-                                  This google drive contains a complete portfolio of some of my design projects, from 2016 to now.
-                                </p>
-                                <div class="project__description--links">
-                                  <a href="https://drive.google.com/drive/folders/1mKE13yEGmdx6NHmtXPdnxPk7X44gDmEO?usp=sharing" target="_blank" class="project__description--link">
-                                    <i class="bx bx-link"></i>
-                                  </a>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
                         </ul>
-                      </div>
                     </div>
+
+                    <div class="portfolio__content mix ux">
+                        <ul class="project">
+                            <div class="project__wrapper">
+                                <img src="assets/img/symp_project.png" class="project__img" alt="Symp">
+                                <div class="project__description">
+                                    <h3 class="project__description--title">Symp</h3>
+                                    <h4 class="project__description--sub-title">
+                                    UX Design, Miro
+                                    </h4>
+                                    <p class="project__description--para">
+                                    Symp is a UX project done together with my NM2213 Project mates. Symp aims to design a 
+                                    conferencing and collaboration app with musicians in mind. The platform incorporates 
+                                    custom video views as well as common musician tools. The project prototype was done on the Miro platform.
+                                    </p>
+                                    <div class="project__description--links">
+                                    <a href="https://docs.google.com/document/d/1zMU323l5nFixeTyoinJnYjkYFIn63hVxxJZPowEzoyY/edit?usp=sharing" target="_blank" class="project__description--link">
+                                        <i class="bx bxs-file-doc"></i>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio__content mix ux">
+                        <ul class="project">
+                            <div class="project__wrapper">
+                                <img src="assets/img/EasyDelivery_project.png" class="project__img" alt="Easy Delivery">
+                                <div class="project__description">
+                                    <h3 class="project__description--title">EasyDelivery</h3>
+                                    <h4 class="project__description--sub-title">
+                                    UI/UX Design, Figma
+                                    </h4>
+                                    <p class="project__description--para">
+                                    With thorough analysis of user case scenarios and requirements, I imagined and designed a delivery request platform application on figma. 
+                                    EasyDelivery is an open delivery platform where people can requests for deliveries of their items and also take on delivery requests. 
+                                    </p>
+                                    <div class="project__description--links">
+                                    <a href="https://www.figma.com/file/JOPt2tj9bFHVRXBx2uRDXg/EasyDelivery-Application-Screens" target="_blank" class="project__description--link">
+                                        <i class="bx bxl-figma"></i>
+                                    </a>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio__content mix dev">
+                        <ul class="project">
+                            <div class="project__wrapper">
+                                <img src="assets/img/portfolio-website_project.png" class="project__img" alt="Portfolio Website">
+                                <div class="project__description">
+                                    <h3 class="project__description--title">Portfolio Website</h3>
+                                    <h4 class="project__description--sub-title">
+                                    HTML, CSS, PHP
+                                    </h4>
+                                    <p class="project__description--para">
+                                    My personal portfolio website, the one that you are viewing currently. Done with HTML, CSS and PHP.
+                                    </p>
+                                    <div class="project__description--links">
+                                    <a href="https://github.com/Roystal/roystal.github.io.git" target="_blank" class="project__description--link">
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio__content mix others">
+                        <ul class="project">
+                            <li class="project">
+                                <div class="project__wrapper">
+                                    <img src="assets/img/publicity-materials_project.png" class="project__img" alt="Design Projects">
+                                    <div class="project__description">
+                                    <h3 class="project__description--title">Design Projects</h3>
+                                    <h4 class="project__description--sub-title">
+                                        Canva, Figma
+                                    </h4>
+                                    <p class="project__description--para">
+                                        I have always loved designing and creating beautiful posters, phamplets, posts and etc.
+                                        This google drive contains a complete portfolio of some of my design projects, from 2016 to now.
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="https://drive.google.com/drive/folders/1mKE13yEGmdx6NHmtXPdnxPk7X44gDmEO?usp=sharing" target="_blank" class="project__description--link">
+                                        <i class="bx bx-link"></i>
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </li>
+                        </ul>
+                    </div>  
+                </div>       
+
+
                   </section>
 
             <!--===== PROJECT IN MIND =====

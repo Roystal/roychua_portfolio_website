@@ -337,6 +337,9 @@ section:nth-child(even) {
   background-color: var(--first-color-lighten);
 }
 
+/*For usage for read more buttons*/
+#more {display: none;}
+
 .button-link {
   background: none;
   color: var(--first-color);
@@ -561,14 +564,7 @@ section:nth-child(even) {
 }
 
 .portfolio__content {
-  background-color: #FFF;
   border-radius: .5rem;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
-}
-
-.portfolio__content:hover {
-  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
 }
 
 .portfolio__content:hover .portfolio__img {
@@ -604,12 +600,11 @@ section:nth-child(even) {
 /*===== PROJECTS =====*/
 
 .project {
+  margin-top: 60px;
   margin-bottom: 135px;
 }
 
-.project:last-child {
-  margin-bottom: 40px;
-}
+
 
 .project__img {
   width: 100%;
