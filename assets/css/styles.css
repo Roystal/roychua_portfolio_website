@@ -419,8 +419,6 @@ section:nth-child(even) {
 }
 
 .qualification__box {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #CCC;
 }
 
 .qualification__area {
@@ -443,6 +441,20 @@ section:nth-child(even) {
   display: block;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
+}
+
+.qualification-description {
+  margin: var(--mb-1);
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification-list-item {
+  margin-left: var(--mb-4);
+  margin-top:var(--mb-1);
+  margin-bottom:var(--mb-1);
+  margin-right:var(--mb-1);
 }
 
 /*===== SERVICES =====*/
